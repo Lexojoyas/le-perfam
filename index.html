@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Le Perfam · Perfumes árabes y de diseñador en Salsipuedes y Río Ceballos</title>
+  <meta name="description" content="Le Perfam, perfumería de Salsipuedes y Río Ceballos (Córdoba). Perfumes árabes y de diseñador originales, por encargo. Armá tu pedido en la web y confirmalo por WhatsApp. Envíos a toda la provincia de Córdoba.">
+  <meta name="theme-color" content="#f6f1ea">
+
+  <!-- Vista previa al compartir el link. Cuando tengas la dirección definitiva,
+       cambiá og:image por la URL completa (ver README). -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Le Perfam">
+  <meta property="og:title" content="Le Perfam · Perfumería en Salsipuedes y Río Ceballos">
+  <meta property="og:description" content="Perfumes árabes y de diseñador, originales y por encargo. Envíos a toda la provincia de Córdoba.">
+  <meta property="og:image" content="assets/img/og-le-perfam.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo de Le Perfam Perfumería">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@400;500;600&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "Le Perfam",
+    "description": "Perfumería. Perfumes árabes y de diseñador, originales y por encargo.",
+    "telephone": "+54 9 3543 31-3011",
+    "address": { "@type": "PostalAddress", "addressLocality": "Salsipuedes", "addressRegion": "Córdoba", "addressCountry": "AR" },
+    "areaServed": "Provincia de Córdoba, Argentina",
+    "sameAs": ["https://www.instagram.com/leperfam.cba"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#catalogo">Ir al catálogo</a>
+
+  <!-- ===== Aviso superior (solo con promo activa) ===== -->
+  <div class="announce" data-announce hidden>
+    <a href="#promo" data-announce-link></a>
+  </div>
+
+  <!-- ===== Encabezado ===== -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#inicio" aria-label="Le Perfam, ir al inicio">
+        <img class="brand__mono" src="assets/img/marca/monograma-tinta.webp" alt="" width="150" height="159">
+        <img class="brand__word" src="assets/img/marca/logotipo-tinta.webp" alt="" width="560" height="54">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Secciones">
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li data-promo-only><a href="#promo">Promo</a></li>
+          <li><a href="#mas-vendidos">Más vendidos</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="site-nav__extra">
+          <a data-wa-consult href="https://wa.me/5493543313011" target="_blank" rel="noopener">WhatsApp</a>
+          <a data-ig-link href="https://www.instagram.com/leperfam.cba" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <button class="icon-btn icon-btn--plain" type="button" data-search-jump aria-label="Buscar un perfume">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+        </button>
+        <button class="bag-btn" type="button" data-open-cart aria-controls="encargo" aria-expanded="false" aria-label="Ver tu encargo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3.5h5v2.6c2.3.8 3.9 3 3.9 5.5v7.4a1.5 1.5 0 0 1-1.5 1.5H7.1a1.5 1.5 0 0 1-1.5-1.5v-7.4c0-2.5 1.6-4.7 3.9-5.5V3.5Z"/></svg>
+          <span class="bag-btn__label">Encargo</span>
+          <span class="bag-btn__count" data-cart-count hidden>0</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Abrir menú" data-menu-toggle>
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== Portada ===== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow">Perfumería en Salsipuedes y Río Ceballos · Córdoba</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line"><span>Perfumes árabes</span></span>
+            <span class="hero__line"><span>y de diseñador,</span></span>
+            <span class="hero__line"><em>por encargo.</em></span>
+          </h1>
+          <p class="hero__lead">Originales, de <span data-stat="marcas">23</span> marcas. Elegí tu fragancia, armá tu encargo acá y te lo confirmamos por WhatsApp.</p>
+          <div class="hero__actions">
+            <a class="btn btn--ink" href="#catalogo">Explorar el catálogo</a>
+            <a class="link-arrow" href="#como-funciona">Cómo funciona el encargo</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>Fragancias</dt><dd data-stat="perfumes">107</dd></div>
+            <div><dt>Marcas</dt><dd data-stat="marcas">23</dd></div>
+            <div><dt>Envíos</dt><dd class="is-text">A toda Córdoba</dd></div>
+          </dl>
+        </div>
+
+        <aside class="index-card" aria-labelledby="index-title">
+          <header class="index-card__head">
+            <h2 class="index-card__title" id="index-title">Índice de marcas</h2>
+            <p>Fragancias por marca</p>
+          </header>
+          <ol class="index-card__list" data-brand-index></ol>
+          <a class="index-card__all link-arrow" href="#catalogo" data-show-brands>Ver las <span data-stat="marcas">23</span> marcas</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Promo (se completa desde catalogo.js) ===== -->
+    <section class="section section--blush" id="promo" aria-labelledby="promo-title" hidden>
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">Promo</p>
+            <h2 class="section-title" id="promo-title" data-promo-title>Promo</h2>
+          </div>
+          <p class="section-head__text" data-promo-text></p>
+        </header>
+        <div class="product-row" data-promo-grid></div>
+      </div>
+    </section>
+
+    <!-- ===== Más vendidos ===== -->
+    <section class="section" id="mas-vendidos" aria-labelledby="mv-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">Los que más nos piden</p>
+            <h2 class="section-title" id="mv-title">Más vendidos</h2>
+          </div>
+          <a class="link-arrow" href="#catalogo">Ver todo el catálogo</a>
+        </header>
+        <div class="product-row" data-bestsellers></div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona ===== -->
+    <section class="section section--ink" id="como-funciona" aria-labelledby="how-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">Por encargo</p>
+            <h2 class="section-title" id="how-title">Cómo funciona</h2>
+          </div>
+          <p class="section-head__text">Trabajamos todos los perfumes por encargo. Vos elegís y nosotros te confirmamos cada detalle antes de cerrar el pedido.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="reveal">
+            <span class="steps__n">1</span>
+            <h3>Elegí</h3>
+            <p>Buscá por marca, por nombre o por estilo: mujer, hombre o unisex.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">2</span>
+            <h3>Armá tu encargo</h3>
+            <p>Agregá los perfumes que quieras y ajustá las cantidades.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">3</span>
+            <h3>Envialo por WhatsApp</h3>
+            <p>El pedido sale escrito y ordenado. Te confirmamos disponibilidad, precio final y entrega.</p>
+          </li>
+          <li class="reveal">
+            <span class="steps__n">4</span>
+            <h3>Recibilo</h3>
+            <p>En Salsipuedes, Río Ceballos o en cualquier localidad de la provincia de Córdoba.</p>
+          </li>
+        </ol>
+
+        <div class="how-footer reveal">
+          <ul class="how-footer__facts">
+            <li>Perfumes 100% originales</li>
+            <li>Salsipuedes · Río Ceballos</li>
+            <li>Envíos a toda la provincia de Córdoba</li>
+          </ul>
+          <a class="btn btn--light" data-wa-consult href="https://wa.me/5493543313011" target="_blank" rel="noopener">
+            <svg class="wa-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+            Hacer una consulta
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Catálogo ===== -->
+    <section class="section section--paper catalog" id="catalogo" aria-labelledby="cat-title">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow">Catálogo</p>
+            <h2 class="section-title" id="cat-title">Todas las fragancias</h2>
+          </div>
+          <p class="section-head__text">Precios en pesos, sujetos a cambio y a disponibilidad. Todos los perfumes son por encargo.</p>
+        </header>
+
+        <div class="catalog__layout">
+          <!-- Filtros laterales (computadora) -->
+          <aside class="filters" aria-label="Filtros del catálogo">
+            <div class="filters__group">
+              <h3 class="filters__title" id="f-gender-title-d">Para</h3>
+              <div class="seg" role="group" aria-labelledby="f-gender-title-d" data-gender-group></div>
+            </div>
+            <div class="filters__group">
+              <label class="filters__title" for="f-sort-d">Ordenar</label>
+              <div class="select"><select id="f-sort-d" data-sort></select></div>
+            </div>
+            <div class="filters__group filters__group--brands">
+              <h3 class="filters__title" id="f-brand-title">Marcas</h3>
+              <ul class="brand-list" aria-labelledby="f-brand-title" data-brand-list></ul>
+            </div>
+          </aside>
+
+          <div class="catalog__main">
+            <div class="toolbar" role="search">
+              <div class="select toolbar__brand">
+                <label class="visually-hidden" for="f-brand">Marca</label>
+                <select id="f-brand" data-brand-select></select>
+              </div>
+              <div class="search">
+                <label class="visually-hidden" for="f-search">Buscar perfume o marca</label>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+                <input id="f-search" type="search" placeholder="Buscar perfume o marca" autocomplete="off" enterkeyhint="search" data-search>
+                <button class="search__clear" type="button" data-search-clear aria-label="Borrar búsqueda" hidden>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7 7 17"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Filtros en celular y tablet -->
+            <div class="filters-inline">
+              <div class="seg" role="group" aria-label="Para quién" data-gender-group></div>
+              <div class="select select--compact">
+                <label class="visually-hidden" for="f-sort-m">Ordenar</label>
+                <select id="f-sort-m" data-sort></select>
+              </div>
+            </div>
+
+            <div class="catalog__status">
+              <p class="catalog__count" data-result-count aria-live="polite"></p>
+              <div class="active-filters" data-active-filters></div>
+            </div>
+
+            <div class="catalog__results" data-catalog></div>
+
+            <div class="empty" data-empty hidden>
+              <span class="empty__mark" aria-hidden="true"></span>
+              <h3 class="empty__title">No encontramos <span data-empty-term>ese perfume</span></h3>
+              <p>Como trabajamos por encargo, quizás lo podamos conseguir. Escribinos y lo buscamos.</p>
+              <div class="empty__actions">
+                <a class="btn btn--ink" data-empty-wa href="https://wa.me/5493543313011" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+                <button class="btn btn--ghost" type="button" data-reset-filters>Ver todo el catálogo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie ===== -->
+  <footer class="site-footer" id="contacto">
+    <div class="wrap">
+      <div class="site-footer__top">
+        <div class="site-footer__brand">
+          <img src="assets/img/marca/logo-dorado.webp" alt="Le Perfam Perfumería" width="763" height="541" loading="lazy">
+          <p>Perfumes árabes y de diseñador, originales y por encargo.</p>
+        </div>
+
+        <div class="site-footer__cols">
+          <div>
+            <h2 class="site-footer__title">Encargos y consultas</h2>
+            <p><a class="site-footer__wa" data-wa-consult href="https://wa.me/5493543313011" target="_blank" rel="noopener"><span data-wa-visible>+54 9 3543 31-3011</span></a></p>
+            <p class="site-footer__muted">Por WhatsApp</p>
+          </div>
+          <div>
+            <h2 class="site-footer__title">Zona</h2>
+            <p>Salsipuedes · Río Ceballos</p>
+            <p class="site-footer__muted">Envíos a toda la provincia de Córdoba</p>
+          </div>
+          <nav aria-label="Secciones del sitio">
+            <h2 class="site-footer__title">Secciones</h2>
+            <ul>
+              <li><a href="#catalogo">Catálogo</a></li>
+              <li data-promo-only><a href="#promo">Promo</a></li>
+              <li><a href="#mas-vendidos">Más vendidos</a></li>
+              <li><a href="#como-funciona">Cómo funciona</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <a class="ig-block" data-ig-link href="https://www.instagram.com/leperfam.cba" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle class="dot" cx="17.4" cy="6.6" r=".9"/></svg>
+        <span class="ig-block__text">
+          <span class="ig-block__kicker">Seguinos en Instagram</span>
+          <span class="ig-block__user" data-ig-user>@leperfam.cba</span>
+        </span>
+        <span class="ig-block__arrow" aria-hidden="true">→</span>
+      </a>
+
+      <p class="site-footer__legal">Precios sujetos a cambio y a disponibilidad. © <span data-year>2026</span> Le Perfam.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Aviso al agregar ===== -->
+  <div class="toast" data-toast role="status" aria-live="polite" hidden>
+    <div class="toast__body">
+      <p class="toast__title" data-toast-title></p>
+      <p class="toast__meta" data-toast-meta></p>
+    </div>
+    <button class="toast__btn" type="button" data-open-cart>Ver encargo</button>
+  </div>
+
+  <!-- ===== Barra de encargo (celular) ===== -->
+  <button class="bagbar" type="button" data-open-cart data-bagbar hidden>
+    <span class="bagbar__info">
+      <span class="bagbar__label">Tu encargo</span>
+      <span class="bagbar__meta" data-bagbar-meta></span>
+    </span>
+    <span class="bagbar__cta">Ver y enviar</span>
+  </button>
+
+  <!-- ===== WhatsApp para consultas ===== -->
+  <a class="wa-float" data-wa-consult data-wa-float href="https://wa.me/5493543313011" target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+    <span class="wa-float__label">Consultas</span>
+  </a>
+
+  <!-- ===== Foto ampliada ===== -->
+  <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button class="icon-btn icon-btn--on-dark lightbox__close" type="button" data-lb-close aria-label="Cerrar foto">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+    <button class="icon-btn icon-btn--on-dark lightbox__nav lightbox__prev" type="button" data-lb-prev aria-label="Foto anterior" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img class="lightbox__img" data-lb-img src="data:," alt="">
+      <figcaption>
+        <span class="lightbox__caption" data-lb-caption></span>
+        <span class="lightbox__counter" data-lb-counter hidden></span>
+      </figcaption>
+    </figure>
+    <button class="icon-btn icon-btn--on-dark lightbox__nav lightbox__next" type="button" data-lb-next aria-label="Foto siguiente" hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+  </div>
+
+  <!-- ===== Panel del encargo ===== -->
+  <div class="drawer" id="encargo" data-drawer hidden>
+    <div class="drawer__backdrop" data-close-cart></div>
+    <section class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+      <header class="drawer__head">
+        <div>
+          <p class="eyebrow">Por encargo</p>
+          <h2 class="drawer__title" id="drawer-title">Tu encargo <span class="drawer__count" data-drawer-count></span></h2>
+        </div>
+        <button class="icon-btn" type="button" data-close-cart aria-label="Cerrar el encargo">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+
+      <div class="drawer__body">
+        <ul class="order" data-order-list aria-label="Perfumes del encargo"></ul>
+
+        <div class="order-empty" data-order-empty>
+          <span class="empty__mark" aria-hidden="true"></span>
+          <p class="order-empty__title">Tu encargo está vacío</p>
+          <p>Agregá perfumes desde el catálogo. Cuando esté listo, lo enviás por WhatsApp y te confirmamos todo.</p>
+          <a class="btn btn--ink" href="#catalogo" data-close-cart>Ir al catálogo</a>
+        </div>
+
+        <form class="checkout" data-checkout novalidate hidden>
+          <h3 class="checkout__title">Tus datos para el pedido</h3>
+
+          <div class="field">
+            <label for="c-nombre">Nombre <span class="field__req">obligatorio</span></label>
+            <input id="c-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="c-nombre-err">
+            <p class="field__error" id="c-nombre-err" hidden>Escribí tu nombre para que sepamos de quién es el encargo.</p>
+          </div>
+
+          <fieldset class="field" aria-describedby="c-zona-err">
+            <legend>¿Dónde lo recibís? <span class="field__req">obligatorio</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="zona" value="Salsipuedes"><span>Salsipuedes</span></label>
+              <label class="choice"><input type="radio" name="zona" value="Río Ceballos"><span>Río Ceballos</span></label>
+              <label class="choice"><input type="radio" name="zona" value="otra"><span>Otra localidad</span></label>
+            </div>
+            <p class="field__error" id="c-zona-err" hidden>Elegí dónde lo recibís.</p>
+          </fieldset>
+
+          <div class="field" data-localidad-field hidden>
+            <label for="c-localidad">Localidad de Córdoba <span class="field__req">obligatorio</span></label>
+            <input id="c-localidad" name="localidad" type="text" autocomplete="address-level2" placeholder="Ej.: Unquillo" aria-describedby="c-localidad-err">
+            <p class="field__error" id="c-localidad-err" hidden>Escribí la localidad para coordinar el envío.</p>
+          </div>
+
+          <div class="field">
+            <label for="c-nota">Nota <span class="field__opt">opcional</span></label>
+            <textarea id="c-nota" name="nota" rows="2" placeholder="Para regalo, horario de contacto, etc."></textarea>
+          </div>
+
+          <div class="clear-cart">
+            <button class="link-btn" type="button" data-clear-ask>Vaciar encargo</button>
+            <span class="clear-cart__confirm" data-clear-confirm hidden>
+              ¿Vaciar todo?
+              <button class="link-btn link-btn--strong" type="button" data-clear-yes>Sí, vaciar</button>
+              <button class="link-btn" type="button" data-clear-no>Cancelar</button>
+            </span>
+          </div>
+        </form>
+      </div>
+
+      <footer class="drawer__foot" data-order-foot hidden>
+        <dl class="summary">
+          <div><dt data-summary-label>Perfumes</dt><dd data-summary-sub>$0</dd></div>
+          <div class="summary__total"><dt>Total estimado</dt><dd data-summary-total>$0</dd></div>
+        </dl>
+        <a class="btn btn--wa" data-wa-order href="https://wa.me/5493543313011" target="_blank" rel="noopener">
+          <svg class="wa-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
+          Enviar encargo por WhatsApp
+        </a>
+        <p class="drawer__note">No se cobra nada en la web: te confirmamos disponibilidad, precio final y entrega por WhatsApp. ¿No se abrió? Escribinos al <span data-wa-visible>+54 9 3543 31-3011</span>.</p>
+      </footer>
+    </section>
+  </div>
+
+  <script src="assets/js/catalogo.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
