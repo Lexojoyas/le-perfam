@@ -1,165 +1,166 @@
 FOTOS DE LOS PERFUMES
 =====================
 
+Cómo agregar una foto:
 1. Subí la foto a esta carpeta con EXACTAMENTE el nombre que figura abajo.
 2. En assets/js/catalogo.js, agregale  foto: true  a ese perfume.
    Ejemplo: { nombre: "Khamrah", genero: "Unisex", precio: 59900, foto: true },
 
-Recomendado: foto cuadrada (1:1), de 800 x 800 px o más, .jpg, con el frasco centrado
-y fondo prolijo. Mientras un perfume no tenga foto, la web muestra una etiqueta
-con sus iniciales y la leyenda "Foto próximamente".
-Si un perfume nuevo no está en la lista, el nombre se arma igual: marca-perfume.jpg
-(minúsculas, sin tildes, espacios y símbolos cambiados por guiones).
+Recomendado: foto cuadrada de 800 x 800 px o más, .jpg o .webp, con el frasco centrado.
+Sin marcas de agua ni carteles de otros vendedores.
+Mientras un perfume no tenga foto, la web muestra una etiqueta con sus iniciales.
+
+[ ] = ya tiene foto   [ ] = falta
 
 XERJOFF
-  xerjoff-naxos.jpg
-  xerjoff-erba-pura-con-panuelo.jpg
+  [✓] xerjoff-naxos.webp
+  [✓] xerjoff-erba-pura-con-panuelo.webp  (+1 extra)
 
 LATTAFA
-  lattafa-eclaire-pistache.jpg
-  lattafa-his-confession.jpg
-  lattafa-rave-now.jpg
-  lattafa-fakhar-negro.jpg
-  lattafa-yara-tous.jpg
-  lattafa-yara-candy.jpg
-  lattafa-yara-moi.jpg
-  lattafa-yara-rosa.jpg   (ya tiene foto: lattafa-yara-rosa.webp)
-  lattafa-yara-elixir.jpg
-  lattafa-asad.jpg
-  lattafa-asad-bourbon.jpg
-  lattafa-asad-elixir.jpg
-  lattafa-haya-rosa.jpg
-  lattafa-fakhar-rose-gold.jpg   (ya tiene foto: lattafa-fakhar-rose-gold.webp)
-  lattafa-fakhar-dorado.jpg
-  lattafa-khamrah.jpg
-  lattafa-hayaati.jpg
-  lattafa-habik-women.jpg
-  lattafa-habik-for-men.jpg
-  lattafa-the-kingdom.jpg
-  lattafa-art-of-universe.jpg
-  lattafa-vintage-radio.jpg
-  lattafa-jasoor.jpg
-  lattafa-musamam-white-intense.jpg
-  lattafa-badee-al-oud-noble-blush.jpg   (ya tiene foto: lattafa-badee-al-oud-noble-blush.webp)
-  lattafa-khamrah-karaz.jpg
-  lattafa-victoria.jpg
-  lattafa-badee-sublime.jpg
-  lattafa-eclaire-marron.jpg
-  lattafa-her-confession.jpg
-  lattafa-jub-dalal.jpg
+  [✓] lattafa-eclaire-pistache.webp  (+1 extra)
+  [✓] lattafa-his-confession.webp
+  [✓] lattafa-rave-now.webp
+  [✓] lattafa-fakhar-negro.webp  (+1 extra)
+  [✓] lattafa-yara-tous.webp  (+1 extra)
+  [✓] lattafa-yara-candy.webp  (+1 extra)
+  [✓] lattafa-yara-moi.webp  (+1 extra)
+  [✓] lattafa-yara-rosa.webp  (+1 extra)
+  [✓] lattafa-yara-elixir.webp  (+1 extra)
+  [✓] lattafa-asad.webp  (+2 extra)
+  [✓] lattafa-asad-bourbon.webp  (+1 extra)
+  [✓] lattafa-asad-elixir.webp  (+1 extra)
+  [✓] lattafa-haya-rosa.webp  (+1 extra)
+  [✓] lattafa-fakhar-rose-gold.webp  (+2 extra)
+  [✓] lattafa-fakhar-dorado.webp  (+1 extra)
+  [✓] lattafa-khamrah.webp
+  [✓] lattafa-hayaati.webp
+  [✓] lattafa-habik-women.webp
+  [✓] lattafa-habik-for-men.webp  (+1 extra)
+  [✓] lattafa-the-kingdom.webp  (+1 extra)
+  [✓] lattafa-art-of-universe.webp  (+1 extra)
+  [✓] lattafa-vintage-radio.webp
+  [✓] lattafa-jasoor.webp  (+1 extra)
+  [✓] lattafa-musamam-white-intense.webp  (+1 extra)
+  [✓] lattafa-badee-al-oud-noble-blush.webp  (+1 extra)
+  [✓] lattafa-khamrah-karaz.webp
+  [✓] lattafa-victoria.webp  (+1 extra)
+  [✓] lattafa-badee-sublime.webp  (+1 extra)
+  [✓] lattafa-eclaire-marron.webp
+  [✓] lattafa-her-confession.webp
+  [✓] lattafa-jub-dalal.webp  (+1 extra)
 
 ARMAF
-  armaf-odyssey-mega.jpg
-  armaf-island-bliss.jpg
-  armaf-connoisseur-man.jpg
-  armaf-club-de-nuit-urban-man-elixir.jpg
-  armaf-odyssey-homme-white.jpg
-  armaf-odyssey-homme.jpg
-  armaf-odyssey-black-forest.jpg
-  armaf-odyssey-mandarinsky-limited-edition.jpg
-  armaf-club-de-nuit-intense-man.jpg
-  armaf-kunafa-chocolate.jpg
-  armaf-club-de-nuit-iconic.jpg
-  armaf-mandarin-sky-elixir.jpg
-  armaf-yum-yum.jpg
-  armaf-odyssey-candee.jpg
-  armaf-infinity-eau-de-parfum-plateado.jpg
-  armaf-infinity-eau-de-parfum-dorado.jpg
-  armaf-club-de-nuit-intense-woman.jpg
+  [✓] armaf-odyssey-mega.webp  (+1 extra)
+  [✓] armaf-island-bliss.webp
+  [✓] armaf-connoisseur-man.webp  (+1 extra)
+  [✓] armaf-club-de-nuit-urban-man-elixir.webp  (+2 extra)
+  [✓] armaf-odyssey-homme-white.webp  (+1 extra)
+  [✓] armaf-odyssey-homme.webp  (+1 extra)
+  [✓] armaf-odyssey-black-forest.webp  (+1 extra)
+  [✓] armaf-odyssey-mandarinsky-limited-edition.webp
+  [✓] armaf-club-de-nuit-intense-man.webp  (+1 extra)
+  [✓] armaf-kunafa-chocolate.webp  (+1 extra)
+  [✓] armaf-club-de-nuit-iconic.webp  (+1 extra)
+  [✓] armaf-mandarin-sky-elixir.webp  (+1 extra)
+  [✓] armaf-yum-yum.webp
+  [✓] armaf-odyssey-candee.webp  (+1 extra)
+  [✓] armaf-infinity-eau-de-parfum-plateado.webp
+  [✓] armaf-infinity-eau-de-parfum-dorado.webp  (+1 extra)
+  [✓] armaf-club-de-nuit-intense-woman.webp  (+1 extra)
 
 RASASI
-  rasasi-hawas-malibu.jpg
-  rasasi-hawas-ice.jpg
-  rasasi-hawas-kobra.jpg
-  rasasi-hawas-fire.jpg
-  rasasi-hawas-verde.jpg
-  rasasi-hawas-for-him.jpg
-  rasasi-hawas-black.jpg
-  rasasi-hawas-elixir.jpg
+  [✓] rasasi-hawas-malibu.webp  (+1 extra)
+  [✓] rasasi-hawas-ice.webp  (+1 extra)
+  [✓] rasasi-hawas-kobra.webp  (+1 extra)
+  [✓] rasasi-hawas-fire.webp  (+1 extra)
+  [✓] rasasi-hawas-verde.webp
+  [✓] rasasi-hawas-for-him.webp
+  [✓] rasasi-hawas-black.webp  (+1 extra)
+  [✓] rasasi-hawas-elixir.webp  (+1 extra)
 
 FRENCH AVENUE
-  french-avenue-liquid-brun.jpg
-  french-avenue-vulcan-baie.jpg
-  french-avenue-spectre-wraith.jpg
-  french-avenue-vulcan-feu.jpg
-  french-avenue-royal-blend-nero.jpg
-  french-avenue-irida-extrait.jpg
-  french-avenue-vulcan-limited-edition.jpg
-  french-avenue-spectre-ghost.jpg
-  french-avenue-jade-verde.jpg
+  [✓] french-avenue-liquid-brun.webp
+  [✓] french-avenue-vulcan-baie.webp
+  [✓] french-avenue-spectre-wraith.webp
+  [✓] french-avenue-vulcan-feu.webp
+  [✓] french-avenue-royal-blend-nero.webp
+  [✓] french-avenue-irida-extrait.webp  (+1 extra)
+  [ ] french-avenue-vulcan-limited-edition.jpg
+  [✓] french-avenue-spectre-ghost.webp  (+1 extra)
+  [✓] french-avenue-jade-verde.webp
 
 AFNAN
-  afnan-9am-dive.jpg
-  afnan-9pm-elixir.jpg
-  afnan-9pm-rebel.jpg
-  afnan-supremacy-collectors-edition.jpg
-  afnan-9pm-pour-femme.jpg
-  afnan-9am-pour-femme-rosa.jpg
-  afnan-9pm-night-out.jpg
+  [✓] afnan-9am-dive.webp  (+1 extra)
+  [✓] afnan-9pm-elixir.webp
+  [✓] afnan-9pm-rebel.webp  (+1 extra)
+  [✓] afnan-supremacy-collectors-edition.webp  (+2 extra)
+  [✓] afnan-9pm-pour-femme.webp
+  [✓] afnan-9am-pour-femme-rosa.webp
+  [✓] afnan-9pm-night-out.webp  (+1 extra)
 
 AL HARAMAIN
-  al-haramain-al-haramain-gold-edition-edp-100ml.jpg
-  al-haramain-dubai-night.jpg
-  al-haramain-amber-oud-gold-edition.jpg
+  [✓] al-haramain-al-haramain-gold-edition-edp-100ml.webp
+  [✓] al-haramain-dubai-night.webp  (+1 extra)
+  [✓] al-haramain-amber-oud-gold-edition.webp  (+1 extra)
 
 BHARARA
-  bharara-king-eau-de-parfum.jpg
-  bharara-rose.jpg
-  bharara-king-gold-edition.jpg
-  bharara-king-soleil.jpg
+  [✓] bharara-king-eau-de-parfum.webp  (+1 extra)
+  [✓] bharara-rose.webp  (+1 extra)
+  [✓] bharara-king-gold-edition.webp  (+1 extra)
+  [✓] bharara-king-soleil.webp
 
 JEAN PAUL GAULTIER
-  jean-paul-gaultier-la-belle-rosee.jpg
-  jean-paul-gaultier-le-beau-le-parfum.jpg
-  jean-paul-gaultier-divine.jpg
+  [✓] jean-paul-gaultier-la-belle-rosee.webp  (+1 extra)
+  [✓] jean-paul-gaultier-le-beau-le-parfum.webp
+  [✓] jean-paul-gaultier-divine.webp
 
 PARIS CORNER
-  paris-corner-eshal-vainilla.jpg
-  paris-corner-khair-confection.jpg
-  paris-corner-eshal-musk-rosa.jpg
+  [✓] paris-corner-eshal-vainilla.webp
+  [✓] paris-corner-khair-confection.webp
+  [✓] paris-corner-eshal-musk-rosa.webp
 
 ASDAAF
-  asdaaf-ameerat-al-arab.jpg
-  asdaaf-ameer-al-arab.jpg
+  [✓] asdaaf-ameerat-al-arab.webp  (+1 extra)
+  [✓] asdaaf-ameer-al-arab.webp  (+1 extra)
 
 AZZARO
-  azzaro-wanted-eau-de-toilette.jpg
-  azzaro-the-most-wanted-parfum.jpg
+  [✓] azzaro-wanted-eau-de-toilette.webp
+  [✓] azzaro-the-most-wanted-parfum.webp  (+1 extra)
 
 BOND NO. 9
-  bond-no-9-madison-avenue.jpg
-  bond-no-9-greenwich-village.jpg
+  [✓] bond-no-9-madison-avenue.webp
+  [✓] bond-no-9-greenwich-village.webp  (+1 extra)
 
 KHADLAJ
-  khadlaj-shiyaaka-snow.jpg
-  khadlaj-shiyaaka-shadow.jpg
+  [✓] khadlaj-shiyaaka-snow.webp
+  [✓] khadlaj-shiyaaka-shadow.webp
 
 MAISON ASRAR
-  maison-asrar-milky-way.jpg
-  maison-asrar-voyage-vanilla.jpg
+  [✓] maison-asrar-milky-way.webp
+  [✓] maison-asrar-voyage-vanilla.webp
 
 RAYHAAN
-  rayhaan-rayhaan-obsidian.jpg
-  rayhaan-tropical-vibe.jpg
+  [✓] rayhaan-rayhaan-obsidian.webp
+  [✓] rayhaan-tropical-vibe.webp
 
 AHMED AL MAGHRIBI
-  ahmed-al-maghribi-oud-lavender.jpg
+  [✓] ahmed-al-maghribi-oud-lavender.webp
 
 AL WATANIAH
-  al-wataniah-sabah-al-ward-rosa.jpg
+  [✓] al-wataniah-sabah-al-ward-rosa.webp
 
 CAROLINA HERRERA
-  carolina-herrera-la-bomba.jpg
+  [✓] carolina-herrera-la-bomba.webp
 
 DUMONT
-  dumont-nitro-red.jpg
+  [✓] dumont-nitro-red.webp  (+1 extra)
 
 LE FALCONE
-  le-falcone-bonita-rouge.jpg
+  [✓] le-falcone-bonita-rouge.webp
 
 ORIENTICA
-  orientica-luxury-collection-amber-rouge.jpg
+  [✓] orientica-luxury-collection-amber-rouge.webp
 
 OTRAS
-  otras-game-of-spades-wildcard.jpg
-  otras-marshmellow-blush.jpg
+  [✓] otras-game-of-spades-wildcard.webp
+  [✓] otras-marshmellow-blush.webp  (+1 extra)

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Le Perfam · Perfumes árabes y de diseñador en Salsipuedes y Río Ceballos</title>
   <meta name="description" content="Le Perfam, perfumería de Salsipuedes y Río Ceballos (Córdoba). Perfumes árabes y de diseñador originales, por encargo. Armá tu pedido en la web y confirmalo por WhatsApp. Envíos a toda la provincia de Córdoba.">
-  <meta name="theme-color" content="#f6f1ea">
+  <meta name="theme-color" content="#efe7de">
 
   <!-- Vista previa al compartir el link. Cuando tengas la dirección definitiva,
        cambiá og:image por la URL completa (ver README). -->
@@ -26,10 +26,11 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..600;1,6..96,400..500&family=Jost:wght@400;500;600&display=swap">
 
   <link rel="stylesheet" href="assets/css/styles.css">
-  <script>document.documentElement.classList.add("js");</script>
+  <script>document.documentElement.classList.add("js");try{if(localStorage.getItem("leperfam-tema")==="noche")document.documentElement.setAttribute("data-tema","noche")}catch(e){}</script>
 
   <script type="application/ld+json">
   {
@@ -46,10 +47,11 @@
 </head>
 <body>
   <a class="skip-link" href="#catalogo">Ir al catálogo</a>
+  <div class="aura" aria-hidden="true"></div>
 
   <!-- ===== Aviso superior (solo con promo activa) ===== -->
   <div class="announce" data-announce hidden>
-    <a href="#promo" data-announce-link></a>
+    <a href="#promo"><span class="announce__text"><span data-announce-link></span><span data-announce-count hidden></span></span></a>
   </div>
 
   <!-- ===== Encabezado ===== -->
@@ -64,19 +66,30 @@
         <ul>
           <li><a href="#catalogo">Catálogo</a></li>
           <li data-promo-only><a href="#promo">Promo</a></li>
-          <li><a href="#mas-vendidos">Más vendidos</a></li>
-          <li><a href="#como-funciona">Cómo funciona</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li class="nav-mid"><a href="#mas-vendidos">Más vendidos</a></li>
+          <li><a href="#test">Tu perfume</a></li>
+          <li class="nav-wide"><a href="#preguntas">Preguntas</a></li>
+          <li class="nav-small"><a href="#como-funciona">Cómo funciona</a></li>
+          <li class="nav-small"><a href="#contacto">Contacto</a></li>
         </ul>
         <div class="site-nav__extra">
+          <button class="nav-theme" type="button" data-theme-toggle aria-pressed="false" aria-label="Modo noche"><svg class="theme-ico theme-ico--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.6A7.6 7.6 0 0 1 9.4 4.5a7.6 7.6 0 1 0 10.1 10.1Z"/></svg><svg class="theme-ico theme-ico--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.8"/><path d="M12 2.8v2.1M12 19.1v2.1M2.8 12h2.1M19.1 12h2.1M5.5 5.5 7 7M17 17l1.5 1.5M5.5 18.5 7 17M17 7l1.5-1.5"/></svg><span>Modo noche</span></button>
           <a data-wa-consult href="https://wa.me/5493543313011" target="_blank" rel="noopener">WhatsApp</a>
           <a data-ig-link href="https://www.instagram.com/leperfam.cba" target="_blank" rel="noopener">Instagram</a>
         </div>
       </nav>
 
       <div class="site-header__actions">
-        <button class="icon-btn icon-btn--plain" type="button" data-search-jump aria-label="Buscar un perfume">
+        <button class="icon-btn icon-btn--plain theme-btn" type="button" data-theme-toggle aria-pressed="false" aria-label="Modo noche" title="Modo noche">
+          <svg class="theme-ico theme-ico--moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.6A7.6 7.6 0 0 1 9.4 4.5a7.6 7.6 0 1 0 10.1 10.1Z"/></svg>
+          <svg class="theme-ico theme-ico--sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.8"/><path d="M12 2.8v2.1M12 19.1v2.1M2.8 12h2.1M19.1 12h2.1M5.5 5.5 7 7M17 17l1.5 1.5M5.5 18.5 7 17M17 7l1.5-1.5"/></svg>
+        </button>
+        <button class="icon-btn icon-btn--plain search-btn" type="button" data-search-jump aria-label="Buscar un perfume">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+        </button>
+        <button class="icon-btn icon-btn--plain fav-btn" type="button" data-fav-open aria-label="Ver tus favoritos" title="Favoritos">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.6-4.6-9.2-9.2C1.7 7.8 3.9 4.6 7.2 4.6c2 0 3.5 1.1 4.8 2.8 1.3-1.7 2.8-2.8 4.8-2.8 3.3 0 5.5 3.2 4.4 6.5-1.6 4.6-9.2 9.2-9.2 9.2Z"/></svg>
+          <span class="fav-btn__count" data-fav-count hidden>0</span>
         </button>
         <button class="bag-btn" type="button" data-open-cart aria-controls="encargo" aria-expanded="false" aria-label="Ver tu encargo">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3.5h5v2.6c2.3.8 3.9 3 3.9 5.5v7.4a1.5 1.5 0 0 1-1.5 1.5H7.1a1.5 1.5 0 0 1-1.5-1.5v-7.4c0-2.5 1.6-4.7 3.9-5.5V3.5Z"/></svg>
@@ -93,10 +106,10 @@
   <main id="contenido">
 
     <!-- ===== Portada ===== -->
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
+    <section class="hero" id="inicio" aria-labelledby="hero-title" data-hero>
       <div class="wrap hero__grid">
         <div class="hero__copy">
-          <p class="eyebrow hero__eyebrow">Perfumería en Salsipuedes y Río Ceballos · Córdoba</p>
+          <p class="chip hero__eyebrow"><span class="chip__dot" aria-hidden="true"></span>Salsipuedes · Río Ceballos · Córdoba</p>
           <h1 class="hero__title" id="hero-title">
             <span class="hero__line"><span>Perfumes árabes</span></span>
             <span class="hero__line"><span>y de diseñador,</span></span>
@@ -105,7 +118,7 @@
           <p class="hero__lead">Originales, de <span data-stat="marcas">23</span> marcas. Elegí tu fragancia, armá tu encargo acá y te lo confirmamos por WhatsApp.</p>
           <div class="hero__actions">
             <a class="btn btn--ink" href="#catalogo">Explorar el catálogo</a>
-            <a class="link-arrow" href="#como-funciona">Cómo funciona el encargo</a>
+            <a class="btn btn--glass" href="#como-funciona">Cómo funciona</a>
           </div>
           <dl class="hero__facts">
             <div><dt>Fragancias</dt><dd data-stat="perfumes">107</dd></div>
@@ -114,28 +127,54 @@
           </dl>
         </div>
 
-        <aside class="index-card" aria-labelledby="index-title">
-          <header class="index-card__head">
-            <h2 class="index-card__title" id="index-title">Índice de marcas</h2>
-            <p>Fragancias por marca</p>
+        <div class="hero__stage">
+        <aside class="vitrina" aria-labelledby="vitrina-title">
+          <header class="vitrina__head">
+            <h2 class="vitrina__title" id="vitrina-title">Los más pedidos</h2>
+            <a class="vitrina__more" href="#mas-vendidos">Ver todos</a>
           </header>
-          <ol class="index-card__list" data-brand-index></ol>
-          <a class="index-card__all link-arrow" href="#catalogo" data-show-brands>Ver las <span data-stat="marcas">23</span> marcas</a>
+          <div class="vitrina__shelf" data-vitrina></div>
         </aside>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <nav class="brand-rail" aria-labelledby="index-title">
+          <h2 class="brand-rail__title" id="index-title">Marcas</h2>
+          <ol class="brand-rail__list" data-brand-index></ol>
+          <a class="brand-rail__all" href="#catalogo" data-show-brands>Las <span data-stat="marcas">23</span> marcas</a>
+        </nav>
       </div>
     </section>
 
     <!-- ===== Promo (se completa desde catalogo.js) ===== -->
-    <section class="section section--blush" id="promo" aria-labelledby="promo-title" hidden>
+    <section class="section section--promo" id="promo" aria-labelledby="promo-title" hidden>
+      <div class="wrap">
+        <div class="slab slab--rose">
+          <header class="section-head reveal">
+            <div>
+              <p class="eyebrow">Promo</p>
+              <h2 class="section-title" id="promo-title" data-promo-title>Promo</h2>
+            </div>
+            <p class="section-head__text" data-promo-text></p>
+          </header>
+          <div class="countdown reveal" data-countdown hidden></div>
+          <div class="product-row" data-promo-grid></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Recién llegados (perfumes con nuevo: true en catalogo.js) ===== -->
+    <section class="section" id="nuevos" aria-labelledby="nuevos-title" hidden>
       <div class="wrap">
         <header class="section-head reveal">
           <div>
-            <p class="eyebrow">Promo</p>
-            <h2 class="section-title" id="promo-title" data-promo-title>Promo</h2>
+            <p class="eyebrow">Novedades</p>
+            <h2 class="section-title" id="nuevos-title">Recién llegados</h2>
           </div>
-          <p class="section-head__text" data-promo-text></p>
+          <a class="link-arrow" href="#catalogo">Ver todo el catálogo</a>
         </header>
-        <div class="product-row" data-promo-grid></div>
+        <div class="product-row" data-nuevos></div>
       </div>
     </section>
 
@@ -153,9 +192,26 @@
       </div>
     </section>
 
-    <!-- ===== Cómo funciona ===== -->
-    <section class="section section--ink" id="como-funciona" aria-labelledby="how-title">
+    <!-- ===== Test: ¿Qué perfume va con vos? ===== -->
+    <section class="section section--test" id="test" aria-labelledby="test-title">
       <div class="wrap">
+        <div class="slab slab--glass">
+          <header class="section-head reveal">
+            <div>
+              <p class="eyebrow">Tu perfume</p>
+              <h2 class="section-title" id="test-title">¿Qué perfume va con vos?</h2>
+            </div>
+            <p class="section-head__text">Cuatro preguntas rápidas y te mostramos los perfumes del catálogo que más se acercan a lo que te gusta.</p>
+          </header>
+          <div class="quiz" data-quiz aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Cómo funciona ===== -->
+    <section class="section section--how" id="como-funciona" aria-labelledby="how-title">
+      <div class="wrap">
+        <div class="slab slab--smoke">
         <header class="section-head reveal">
           <div>
             <p class="eyebrow">Por encargo</p>
@@ -198,11 +254,12 @@
             Hacer una consulta
           </a>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- ===== Catálogo ===== -->
-    <section class="section section--paper catalog" id="catalogo" aria-labelledby="cat-title">
+    <section class="section catalog" id="catalogo" aria-labelledby="cat-title">
       <div class="wrap">
         <header class="section-head reveal">
           <div>
@@ -218,6 +275,10 @@
             <div class="filters__group">
               <h3 class="filters__title" id="f-gender-title-d">Para</h3>
               <div class="seg" role="group" aria-labelledby="f-gender-title-d" data-gender-group></div>
+            </div>
+            <div class="filters__group">
+              <h3 class="filters__title" id="f-style-title-d">Estilo</h3>
+              <div class="styles" role="group" aria-labelledby="f-style-title-d" data-style-group></div>
             </div>
             <div class="filters__group">
               <label class="filters__title" for="f-sort-d">Ordenar</label>
@@ -248,6 +309,7 @@
             <!-- Filtros en celular y tablet -->
             <div class="filters-inline">
               <div class="seg" role="group" aria-label="Para quién" data-gender-group></div>
+              <div class="styles styles--scroll" role="group" aria-label="Estilo" data-style-group></div>
               <div class="select select--compact">
                 <label class="visually-hidden" for="f-sort-m">Ordenar</label>
                 <select id="f-sort-m" data-sort></select>
@@ -259,19 +321,46 @@
               <div class="active-filters" data-active-filters></div>
             </div>
 
+            <div class="catalog__favbar">
+              <button class="favchip" type="button" data-fav-toggle aria-pressed="false" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.6-4.6-9.2-9.2C1.7 7.8 3.9 4.6 7.2 4.6c2 0 3.5 1.1 4.8 2.8 1.3-1.7 2.8-2.8 4.8-2.8 3.3 0 5.5 3.2 4.4 6.5-1.6 4.6-9.2 9.2-9.2 9.2Z"/></svg>Mis favoritos <span class="favchip__n" data-fav-count hidden>0</span></button>
+              <a class="btn btn--wa btn--sm" data-fav-wa href="https://wa.me/5493543313011" target="_blank" rel="noopener" hidden><svg class="wa-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>Enviar mi lista por WhatsApp</a>
+            </div>
+
             <div class="catalog__results" data-catalog></div>
 
             <div class="empty" data-empty hidden>
               <span class="empty__mark" aria-hidden="true"></span>
-              <h3 class="empty__title">No encontramos <span data-empty-term>ese perfume</span></h3>
-              <p>Como trabajamos por encargo, quizás lo podamos conseguir. Escribinos y lo buscamos.</p>
-              <div class="empty__actions">
-                <a class="btn btn--ink" data-empty-wa href="https://wa.me/5493543313011" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-                <button class="btn btn--ghost" type="button" data-reset-filters>Ver todo el catálogo</button>
+              <div class="empty__inner" data-empty-default>
+                <h3 class="empty__title">No encontramos <span data-empty-term>ese perfume</span></h3>
+                <p>Como trabajamos por encargo, quizás lo podamos conseguir. Escribinos y lo buscamos.</p>
+                <div class="empty__actions">
+                  <a class="btn btn--ink" data-empty-wa href="https://wa.me/5493543313011" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+                  <button class="btn btn--ghost" type="button" data-reset-filters>Ver todo el catálogo</button>
+                </div>
+              </div>
+              <div class="empty__inner" data-empty-fav hidden>
+                <h3 class="empty__title">Todavía no guardaste favoritos</h3>
+                <p>Tocá el corazón de cualquier perfume para guardarlo. Después nos podés mandar tu lista por WhatsApp.</p>
+                <div class="empty__actions">
+                  <button class="btn btn--ink" type="button" data-reset-filters>Ver todo el catálogo</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Preguntas frecuentes (se completan desde catalogo.js) ===== -->
+    <section class="section section--faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="wrap faq">
+        <header class="faq__head reveal">
+          <p class="eyebrow">Antes de encargar</p>
+          <h2 class="section-title" id="faq-title">Preguntas frecuentes</h2>
+          <p class="section-head__text">¿Te queda alguna duda? Escribinos por WhatsApp y te respondemos.</p>
+          <a class="btn btn--glass" data-wa-consult href="https://wa.me/5493543313011" target="_blank" rel="noopener"><svg class="wa-glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>Hacer una consulta</a>
+        </header>
+        <div class="faq__list reveal" data-faq></div>
       </div>
     </section>
   </main>
@@ -279,6 +368,7 @@
   <!-- ===== Pie ===== -->
   <footer class="site-footer" id="contacto">
     <div class="wrap">
+      <div class="slab slab--smoke site-footer__slab">
       <div class="site-footer__top">
         <div class="site-footer__brand">
           <img src="assets/img/marca/logo-dorado.webp" alt="Le Perfam Perfumería" width="763" height="541" loading="lazy">
@@ -301,8 +391,11 @@
             <ul>
               <li><a href="#catalogo">Catálogo</a></li>
               <li data-promo-only><a href="#promo">Promo</a></li>
+              <li data-nuevos-only hidden><a href="#nuevos">Recién llegados</a></li>
               <li><a href="#mas-vendidos">Más vendidos</a></li>
+              <li><a href="#test">¿Qué perfume va con vos?</a></li>
               <li><a href="#como-funciona">Cómo funciona</a></li>
+              <li><a href="#preguntas">Preguntas frecuentes</a></li>
             </ul>
           </nav>
         </div>
@@ -318,6 +411,7 @@
       </a>
 
       <p class="site-footer__legal">Precios sujetos a cambio y a disponibilidad. © <span data-year>2026</span> Le Perfam.</p>
+      </div>
     </div>
   </footer>
 
@@ -344,6 +438,17 @@
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
     <span class="wa-float__label">Consultas</span>
   </a>
+
+  <!-- ===== Ficha del perfume ===== -->
+  <div class="ficha" data-ficha role="dialog" aria-modal="true" aria-labelledby="ficha-title" hidden>
+    <div class="ficha__backdrop" data-ficha-close></div>
+    <section class="ficha__panel">
+      <button class="icon-btn ficha__close" type="button" data-ficha-close aria-label="Cerrar la ficha">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="ficha__body" data-ficha-body></div>
+    </section>
+  </div>
 
   <!-- ===== Foto ampliada ===== -->
   <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
@@ -445,6 +550,8 @@
   </div>
 
   <script src="assets/js/catalogo.js"></script>
+  <script src="assets/js/notas.js"></script>
   <script src="assets/js/app.js"></script>
+  <script src="assets/js/hero3d.js"></script>
 </body>
 </html>
